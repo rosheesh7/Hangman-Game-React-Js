@@ -1,40 +1,31 @@
-# React Hangman Game
+# Hangman Game 🎮
 
-## Description
-A classic Hangman word guessing game built with React JS. This game challenges players to guess a hidden word by selecting letters. Incorrect guesses gradually reveal the hangman figure. The game features dynamic word selection, score tracking, and a clean responsive UI.
+A simple and interactive Hangman game built with React JS. Players guess letters to uncover a hidden word before running out of attempts. Perfect for practicing React concepts and building a fun mini-project!
 
----
+## 🧩 Features
 
-## Features
-- Random word selection from a list of programming and English words
-- Tracks correct and incorrect guesses
-- Shows hangman figure progress on wrong guesses
-- Score tracking and game over screen with restart option
-- Responsive design with stylish background and animations
+- Classic Hangman gameplay with a twist
+- Interactive on-screen keyboard
+- Real-time feedback on correct and incorrect guesses
+- Win/Lose animations or messages
+- Clean and responsive UI
+- Easily customizable word list
 
----
+## 🚀 Technologies Used
 
-## Technologies Used
-- React JS (functional components with hooks)
+- React JS
 - JavaScript (ES6+)
-- CSS for styling and animations
+- HTML5 & CSS3
+- Vite or Create React App (your choice for setup)
 
----
-
-## Installation & Setup Instructions
-
-### Prerequisites
-- Node.js installed ([Download here](https://nodejs.org/))
-- npm or yarn package manager
-
-### Steps to run the project locally
+## 🛠️ Installation and Running Locally
 
 1. **Clone the repository**
 
-```bash
-git clone <your-hangman-repo-url>
+   ```bash
+   git clone https://github.com/your-username/hangman-react.git
+   cd hangman-react
 
-```
 
 2. **Navigate into the project directory**
 
@@ -47,7 +38,22 @@ cd your-hangman-project-folder
 npm install
 # or
 yarn install
-```
+``` 
+4. **Open in browser 
+
+Visit http://localhost:5173 (or http://localhost:3000 for CRA)
+
+
+## 👤 Author
+Rosis Sharma
+GitHub: @rosheesh7 
+
+##  License
+This project is licensed under the MIT License — feel free to use and modify it for your own learning or projects.
+
+
+
+
 
 
 
