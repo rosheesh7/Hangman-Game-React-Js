@@ -7,7 +7,8 @@ A simple and interactive Hangman game built with React JS. Players guess letters
 - Classic Hangman gameplay with a twist
 - Interactive on-screen keyboard
 - Real-time feedback on correct and incorrect guesses
-- Win/Lose animations or messages
+- Game Over Animation
+- Game Statistics
 - Clean and responsive UI
 - Easily customizable word list
 
@@ -39,7 +40,7 @@ npm install
 # or
 yarn install
 ``` 
-4. **Open in browser 
+4. **Open in browser**
 
 Visit http://localhost:5173 (or http://localhost:3000 for CRA)
 
