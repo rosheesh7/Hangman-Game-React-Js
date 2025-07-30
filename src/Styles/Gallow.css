@@ -1,0 +1,42 @@
+.gallow-container {
+  position: relative;
+  width: 250px;           
+  height: 400px;         
+  margin: 0 auto;
+}
+
+.gallow-base {
+  height: 6px;           
+  width: 100%;
+  background: #ffffff;      
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.gallow-vertical {
+  height: 100%;
+  width: 6px;             
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 40px;             
+}
+
+.gallow-top {
+  height: 6px;            
+  width: 150px;          
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+
+.gallow-rope {
+  width: 2px;             
+  height: 100px;         
+  background: #ffffff;
+  position: absolute;
+  top: 6px;
+  left: 188px;           
+}

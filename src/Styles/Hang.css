@@ -1,0 +1,78 @@
+.hang-container {
+  display: flex;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 105px 0px;
+  margin-left: -106px;
+}
+
+.head,
+.Neck,
+.leftArm,
+.rightArm,
+.waist,
+.leftLeg,
+.rightLeg {
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.head {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+}
+
+.Neck {
+  width: 3px;
+  height: 30px;
+  margin: 0;
+}
+
+.leftArm,
+.rightArm,
+.leftLeg,
+.rightLeg {
+  width: 3px;
+  height: 50px;
+  margin-left: -35px;
+}
+
+.leftArm,
+.leftLeg {
+  margin-top: -8px;
+  transform: rotate(+45deg);
+}
+
+.rightArm,
+.rightLeg {
+  margin-top: -50px;
+  transform: rotate(-45deg);
+  margin-left: 35px;
+}
+
+.waist {
+  width: 3px;
+  height: 80px;
+  margin-top: -40px;
+}
+
+/* When dead, turn all body parts red */
+.body-container.dead .head {
+  border-color: red;
+}
+
+.body-container.dead .Neck,
+.body-container.dead .leftArm,
+.body-container.dead .rightArm,
+.body-container.dead .waist,
+.body-container.dead .leftLeg,
+.body-container.dead .rightLeg {
+  background-color: red;
+}

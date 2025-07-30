@@ -1,0 +1,40 @@
+.Word-Container{
+    max-width: fit-content;
+    padding: 0;
+    text-align: center;
+}
+.Blank-Container span{
+    font-size: 3rem;
+}
+
+.letter-btns {
+    margin: 10px;
+    width: 350px;
+    margin: 20px auto;
+}
+.letter-btns button {
+    display: inline-block;
+    margin: 5px ;
+    height:  35px;
+    width: 35px;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(14, 78, 255);
+    color:white;
+}
+.letter-btns button:hover {
+    background-color: rgb(2, 106, 191);
+}
+
+.letter-btns button.is-correct{
+    background-color: rgb(3, 244, 3);
+}
+
+.letter-btns button.is-incorrect{
+    background-color: rgb(241, 21, 21);
+}
+
+
+
