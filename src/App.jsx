@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./Components/Header.jsx";
 import WordDisplay from "./Components/WordDisplay.jsx";
 import Hang from "./Components/Hang.jsx";
@@ -13,12 +13,21 @@ const App = () => {
   const [wordToGuess, setWordToGuess] = useState(() => ChooseRandomWord());
   const [correctGuess, setCorrectGuess] = useState([]);
   const [incorrectGuess, setIncorrectGuess] = useState([]);
+  const [hint, setHint] = useState(() => chooseHint());
 
   function ChooseRandomWord() {
     const index = Math.floor(Math.random() * words.length);
     return words[index];
   }
 
+  useEffect(() => {
+    setHint(chooseHint());
+  }, [wordToGuess]);
+
+  function chooseHint() {
+    const wordArr = wordToGuess.split("");
+    return wordArr[0].toUpperCase();
+  }
   function onRestart() {
     setScore(0);
     setIncorrectGuessCount(0);
@@ -34,6 +43,7 @@ const App = () => {
       <div className="Game-Stats">
         <span>Score: {score}</span>
         <span>Guess Remaining: {8 - incorrectGuessCount}</span>
+        <span>Intial: {hint}</span>
       </div>
       {gameover ? (
         <GameOver onRestart={onRestart} score={score} />
@@ -51,6 +61,8 @@ const App = () => {
             setCorrectGuess={setCorrectGuess}
             setIncorrectGuess={setIncorrectGuess}
             ChooseRandomWord={ChooseRandomWord}
+            setHint={setHint}
+            chooseHint={chooseHint}
           />
           <Hang
             incorrectGuessCount={incorrectGuessCount}

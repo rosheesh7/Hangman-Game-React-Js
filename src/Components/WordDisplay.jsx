@@ -13,6 +13,8 @@ const WordDisplay = ({
   wordToGuess,
   setWordToGuess,
   ChooseRandomWord,
+  setHint,
+  chooseHint,
 }) => {
   const alphabets = "abcdefghijklmnopqrstuvwxyz";
   const letters = alphabets.split("");
@@ -40,7 +42,7 @@ const WordDisplay = ({
 
       if (newIncorrectCount >= 8) {
         setTimeout(() => {
-          setGameOver(true);  
+          setGameOver(true);
         }, 1000);
       }
     }
